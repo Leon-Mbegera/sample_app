@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Variables & mixins */ 
+
+$gray-light: #777;
+$gray-medium-light: #eaeaea;
+
 /* Universal styles*/
 
 body {
@@ -43,7 +48,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $gray-light;
 }
 
 p {
@@ -75,8 +80,8 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: $gray-medium-light;
+  color: $gray-light;
   a {
     color: #555;
     &:hover {
