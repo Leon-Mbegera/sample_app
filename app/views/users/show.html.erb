@@ -1,4 +1,9 @@
-<%= @user.name %>, <%= @user.email %>, <%= @user.created_at %>, <%= @user.updated_at %>
+
+<% provide(:title, @user.name) %>
+<div>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+</div>
 
 <div>
   <%= DateTime.now.utc %>
