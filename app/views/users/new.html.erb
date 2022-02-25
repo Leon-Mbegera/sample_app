@@ -2,7 +2,7 @@
 <h1>Sign up</h1>
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-6">
+  <div class="col-md-6 col-md-offset-3">
     <%= form_with(model: @user, local: true) do |f| %>
 
       <%= f.label :name %>
@@ -17,7 +17,7 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit, "Sign UP", class="btn btn-primary" %>
+      <%= f.submit "Sign Up", class:"btn btn-primary" %>
 
     <% end %> 
   </div>
