@@ -5,9 +5,9 @@
       There are <%= pluralize(@user.errors.count, "error") %>
     </div>
     <ul>
-      @user.errors.full_messages.each do |msg|
+      <% @user.errors.full_messages.each do |msg| %>
         <li> <%= msg %> </li>
-      end
+      <% end %>
     </ul>
   </div>
 <% end %>
