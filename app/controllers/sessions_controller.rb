@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       reset_session
       log_in user
+      flash[:success] = "You're successfully Logged In"
       redirect_to user
     else
       flash.now[:danger] = "Invalid username or password, Please try again !"
